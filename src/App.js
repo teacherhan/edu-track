@@ -1,11 +1,21 @@
 import React from "react";
-import logo from "./logo.svg";
+
 import "./App.css";
+//components
+import AddStudent from "./Components/AddStudent";
+import ClasListOutput from "./Components/ClassListOutput";
+import ExamOutput from "./Components/ExamOutput";
+import LoginForm from "./Components/LoginForm";
+import TrueFalse from "./Components/TrueFalse";
+import MultipleChoice from "./Components/MultipleChoice";
 
 function App() {
   return (
     <div className="App">
-      <h1>Initial State</h1>
+      <AddStudent />
+      <MultipleChoice />
+      <TrueFalse />
+      <LoginForm />
     </div>
   );
 }
