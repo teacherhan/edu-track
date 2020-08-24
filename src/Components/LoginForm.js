@@ -1,10 +1,14 @@
 import React from "react";
 
-const userName = () => {
+const loginForm = () => {
   return (
     <div>
-      <input type="email" />
-      <input type="password" />
+      <p>Login</p>
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button type="submit">Login</button>
     </div>
   );
 };
+
+export default loginForm;
