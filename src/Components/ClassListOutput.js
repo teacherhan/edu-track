@@ -1,10 +1,10 @@
 import React from "react";
 
-const classListOutput = () => {
+const classListOutput = (props) => {
   return (
     <div>
-      <p>studentName</p>
-      <p>tudentlastname</p>
+      <p>StudentName: {props.studentName}</p>
+      <p>studentlastname</p>
       <p>Enrolled Class</p>
     </div>
   );
