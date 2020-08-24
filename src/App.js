@@ -14,10 +14,14 @@ class App extends Component {
   state = {
     studentName: "newjohn doe",
   };
+
+  sNameRegHandler = (event) => {
+    this.setState({ studentName: event.target.value });
+  };
   render() {
     return (
       <div className="App">
-        <AddStudent />
+        <AddStudent register={this.sNameRegHandler} />
         <ClassListOutput studentName={this.state.studentName} />
         {/* <MultipleChoice />
         <TrueFalse />
