@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 
 import "./App.css";
 //components
@@ -9,16 +9,22 @@ import LoginForm from "./Components/LoginForm";
 import TrueFalse from "./Components/TrueFalse";
 import MultipleChoice from "./Components/MultipleChoice";
 
-function App() {
-  return (
-    <div className="App">
-      <AddStudent />
-      <ClassListOutput studentName="John Doe" />
-      {/* <MultipleChoice />
-      <TrueFalse />
-      <LoginForm /> */}
-    </div>
-  );
+class App extends Component {
+  //Add state property
+  state = {
+    studentName: "newjohn doe",
+  };
+  render() {
+    return (
+      <div className="App">
+        <AddStudent />
+        <ClassListOutput studentName={this.state.studentName} />
+        {/* <MultipleChoice />
+        <TrueFalse />
+        <LoginForm /> */}
+      </div>
+    );
+  }
 }
 
 export default App;
