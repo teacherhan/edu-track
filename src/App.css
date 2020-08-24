@@ -33,6 +33,13 @@ div {
   border: 1px solid dodgerblue;
   margin: 2%;
   border-radius: 2%;
+  align-items: center;
+  width: 80%;
+}
+button {
+  border-radius: 50px;
+  background: dodgerblue;
+  width: 100px;
 }
 
 @keyframes App-logo-spin {

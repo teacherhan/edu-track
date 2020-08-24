@@ -3,7 +3,7 @@ import React from "react";
 import "./App.css";
 //components
 import AddStudent from "./Components/AddStudent";
-import ClasListOutput from "./Components/ClassListOutput";
+import ClassListOutput from "./Components/ClassListOutput";
 import ExamOutput from "./Components/ExamOutput";
 import LoginForm from "./Components/LoginForm";
 import TrueFalse from "./Components/TrueFalse";
@@ -13,9 +13,10 @@ function App() {
   return (
     <div className="App">
       <AddStudent />
-      <MultipleChoice />
+      <ClassListOutput />
+      {/* <MultipleChoice />
       <TrueFalse />
-      <LoginForm />
+      <LoginForm /> */}
     </div>
   );
 }
