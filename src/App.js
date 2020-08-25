@@ -40,6 +40,7 @@ class App extends Component {
           lastName={this.state.lastName}
           regClass={this.state.regClass}
         />
+        <ExamOutput />
       </div>
     );
   }

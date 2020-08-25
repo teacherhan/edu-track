@@ -5,6 +5,7 @@ const multipleChoice = () => {
       <p>
         <label>Multiple Choice</label>
       </p>
+      <hr />
       <input type="text" placeholder="Enter question" />
       <input type="text" placeholder="Enter option" />
       <button type="button" placeholder="Class">

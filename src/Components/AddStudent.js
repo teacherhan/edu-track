@@ -11,9 +11,8 @@ const addStudent = (props) => {
 
   return (
     <div style={addStStyle}>
-      <p>
-        <label>Student's</label>
-      </p>
+      <p>Register New Student</p>
+      <hr />
       <input type="text" placeholder="Name" onChange={props.registerName} />
       <input
         type="text"
@@ -21,7 +20,7 @@ const addStudent = (props) => {
         onChange={props.registerLastName}
       />
       <input type="text" placeholder="Class" onChange={props.selectClass} />
-      <button type="button">Enroll</button>
+      <button type="button">Register</button>
     </div>
   );
 };
