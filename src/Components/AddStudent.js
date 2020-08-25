@@ -1,8 +1,15 @@
 import React from "react";
 
 const addStudent = (props) => {
+  // Add some inline style
+  const addStStyle = {
+    border: "2px solid dodgerblue",
+    borderRadius: "20px",
+    boxShadow: "5px gray",
+  };
+
   return (
-    <div>
+    <div style={addStStyle}>
       <p>
         <label>Student's</label>
       </p>
