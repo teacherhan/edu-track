@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import * as ReactBootStrap from "react-bootstrap";
 
 import "./App.css";
 //components
