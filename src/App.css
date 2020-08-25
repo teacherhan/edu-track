@@ -28,6 +28,7 @@
   color: #61dafb;
 }
 div {
+  background: #f1f0ff;
   display: flex;
   flex-direction: column;
   /* border: 1px solid dodgerblue; */
@@ -37,9 +38,15 @@ div {
   width: 80%;
 }
 button {
+  border: none;
+  margin: 3px;
   border-radius: 50px;
-  background: dodgerblue;
+  background: #8c489f;
   width: 100px;
+  color: white;
+  box-shadow: 1px 2px #443266;
+  cursor: pointer;
+  outline: none;
 }
 
 @keyframes App-logo-spin {

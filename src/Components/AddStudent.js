@@ -3,9 +3,10 @@ import React from "react";
 const addStudent = (props) => {
   // Add some inline style
   const addStStyle = {
-    border: "2px solid dodgerblue",
+    border: "2px solid #8C489F",
     borderRadius: "20px",
-    boxShadow: "5px gray",
+    boxShadow: "5px 10px #443266",
+    background: "#C3C3E5",
   };
 
   return (
