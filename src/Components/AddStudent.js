@@ -6,9 +6,13 @@ const addStudent = (props) => {
       <p>
         <label>Student's</label>
       </p>
-      <input type="text" placeholder="Name" onChange={props.register} />
-      <input type="text" placeholder="Last name" />
-      <input type="text" placeholder="Class" />
+      <input type="text" placeholder="Name" onChange={props.registerName} />
+      <input
+        type="text"
+        placeholder="Last name"
+        onChange={props.registerLastName}
+      />
+      <input type="text" placeholder="Class" onChange={props.selectClass} />
       <button type="button">Enroll</button>
     </div>
   );

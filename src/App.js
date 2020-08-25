@@ -12,20 +12,34 @@ import MultipleChoice from "./Components/MultipleChoice";
 class App extends Component {
   //Add state property
   state = {
-    studentName: "newjohn doe",
+    studentName: "Name",
+    lastName: "Lastname",
+    regClass: "Class",
   };
 
   sNameRegHandler = (event) => {
     this.setState({ studentName: event.target.value });
   };
+  sLastNameRegHandler = (event) => {
+    this.setState({ lastName: event.target.value });
+  };
+
+  selectClassHandler = (event) => {
+    this.setState({ regClass: event.target.value });
+  };
   render() {
     return (
       <div className="App">
-        <AddStudent register={this.sNameRegHandler} />
-        <ClassListOutput studentName={this.state.studentName} />
-        {/* <MultipleChoice />
-        <TrueFalse />
-        <LoginForm /> */}
+        <AddStudent
+          registerName={this.sNameRegHandler}
+          registerLastName={this.sLastNameRegHandler}
+          selectClass={this.selectClassHandler}
+        />
+        <ClassListOutput
+          studentName={this.state.studentName}
+          lastName={this.state.lastName}
+          regClass={this.state.regClass}
+        />
       </div>
     );
   }
